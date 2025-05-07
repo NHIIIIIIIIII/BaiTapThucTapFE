@@ -2,11 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
-    background: linear-gradient(to right, #e6e6fa 50%, #ffffff 50%);
+    background: linear-gradient(to right, #e6e9ff 50%, #ffffff 50%);
     color: #000;
     overflow-x: hidden;
 }
@@ -15,9 +15,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 30px;
-    background-color: #333;
-    color: #fff;
+    padding: 20px 50px;
+    background-color: transparent;
     position: fixed;
     width: 100%;
     top: 0;
@@ -30,74 +29,77 @@ body {
 }
 
 .logo .circle {
-    width: 30px;
-    height: 30px;
-    background-color: #1e90ff;
+    width: 45px;
+    height: 45px;
+    background-color: #4263eb;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 18px;
-    font-weight: bold;
+    font-size: 22px;
+    font-weight: 900;
     color: #fff;
-    margin-right: 5px;
+    margin-right: 8px;
 }
 
 .logo .name {
-    font-size: 18px;
-    font-weight: bold;
+    font-size: 20px;
+    font-weight: 700;
 }
 
 .nav-links {
     display: flex;
-    gap: 20px;
+    gap: 25px;
 }
 
 .nav-links a {
-    color: #fff;
+    color: #000;
     text-decoration: none;
-    font-size: 14px;
-    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 500;
 }
 
 .nav-links a:hover {
-    text-decoration: underline;
+    color: #4263eb;
 }
 
 .hero {
     height: 100vh;
     display: flex;
-    justify-content: center;
     align-items: center;
-    padding: 0 50px;
+    padding: 0 60px;
     position: relative;
 }
 
 .hero-content {
-    text-align: center;
+    text-align: left;
+    max-width: 600px;
 }
 
 .hero-content h2 {
     font-size: 20px;
-    color: #1e90ff;
-    margin-bottom: 5px;
+    color: #4263eb;
+    margin-bottom: 10px;
     text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
 }
 
 .hero-content h1 {
-    font-size: 60px;
+    font-size: 72px;
     font-weight: 900;
-    margin-bottom: 10px;
-    line-height: 1;
+    margin-bottom: 20px;
+    line-height: 1.2;
 }
 
 .hero-content p {
-    font-size: 20px;
+    font-size: 28px;
+    font-weight: 600;
 }
 
-.hero-content p span {
-    color: #1e90ff;
-    border-bottom: 2px solid #1e90ff;
+.hero-content .highlighted {
+    color: #4263eb;
+    text-decoration: underline;
 }
 
 .arrow {
@@ -105,14 +107,14 @@ body {
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
-    font-size: 30px;
-    color: #1e90ff;
+    font-size: 32px;
+    color: #4263eb;
 }
 
 @media (max-width: 768px) {
     .navbar {
         flex-direction: column;
-        padding: 10px;
+        padding: 15px;
     }
 
     .nav-links {
@@ -122,14 +124,16 @@ body {
     }
 
     .hero-content h1 {
-        font-size: 40px;
+        font-size: 42px;
     }
 
-    .hero-content h2 {
-        font-size: 16px;
-    }
-
+    .hero-content h2,
     .hero-content p {
-        font-size: 16px;
+        font-size: 18px;
+    }
+
+    .hero {
+        padding: 0 20px;
+        justify-content: center;
     }
 }
