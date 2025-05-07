@@ -95,9 +95,12 @@
     font-weight: 700;
   }
   
-  .highlight {
+  #typing {
     color: #4263eb;
     text-decoration: underline;
+    border-right: 2px solid #4263eb;
+    white-space: nowrap;
+    overflow: hidden;
   }
   
   .arrow {
